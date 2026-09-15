@@ -12,9 +12,9 @@
 - 项目使用 Github Actions 拉取 [Lean](https://github.com/coolsnowwolf/lede) 的 Openwrt 源码仓库进行云编译
 - 项目大部分代码拉取自 [haiibo](https://github.com/haiibo/OpenWrt) 的 Openwrt 云编译项目
 - 固件默认管理地址：`192.168.100.1` 默认用户：`root` 默认密码：`password`
-- 提供适配于 ARMv8 电视盒子（6.6内核）、Rockchip 平台（6.6内核）、树莓派4（6.1内核）以及 X86 平台（6.6内核）设备的 OpenWrt 固件
-- ARMv8 盒子固件为 [Mini版](https://github.com/yasuis/OpenWrt/releases/tag/ARMv8_MINI) ，以科学上网为主，包含 [F大](https://github.com/unifreq/openwrt_packit) 发布的所有已适配的盒子固件
-- 固件集成的所有 ipk 插件全部打包在 Packages 文件中，可以在 [Releases](https://github.com/yasuis/OpenWrt/releases) 内进行下载
+- 提供适配于 ARMv8 电视盒子、Rockchip 平台、树莓派4、斐讯N1以及 X86 平台设备的 OpenWrt 固件
+- ARMv8 盒子固件为 [Mini版](https://github.com/yasuis/op/releases/tag/ARMv8_MINI) ，以科学上网为主，包含 [F大](https://github.com/unifreq/openwrt_packit) 发布的所有已适配的盒子固件
+- 固件集成的所有 ipk 插件全部打包在 Packages 文件中，可以在 [Releases](https://github.com/yasuis/op/releases) 内进行下载
 - 项目编译的固件插件为最新版本，最新版插件可能有 BUG，如果之前使用稳定则无需追新
 
 
@@ -26,8 +26,7 @@
 5. 集成 Docker 服务，可在 OpenWrt 内自由部署 Docker 应用
 6. 集成应用过滤插件，支持游戏、视频、聊天、下载等 APP 过滤
 7. 集成在线用户插件，可查看所有在线用户 IP 地址与实时速率等
-8. ARMv8 系列固件内置晶晨宝盒，支持在线更新固件及内核等
-
+8. ARMv8系列固件内置晶晨宝盒，支持在线更新固件及内核等
 
 ## 固件下载 [![](https://img.shields.io/badge/-编译状态及下载链接-FFFFFF.svg)](#固件下载-)
 点击下表中 [![](https://img.shields.io/badge/下载-链接-blueviolet.svg?style=flat&logo=hack-the-box)](https://github.com/yasuis/op/releases) 即可跳转到该设备固件下载页面
@@ -37,7 +36,7 @@
 | [![](https://img.shields.io/badge/OpenWrt-ARMv8_Mini-32C955.svg?logo=op)](https://github.com/yasuis/op/blob/main/.github/workflows/ARMv8-Mini-OpenWrt.yml) | [![](https://github.com/yasuis/op/actions/workflows/ARMv8-Mini-OpenWrt.yml/badge.svg)](https://github.com/yasuis/op/actions/workflows/ARMv8-Mini-OpenWrt.yml) | [![](https://img.shields.io/badge/编译-配置-orange.svg?logo=apache-spark)](https://github.com/yasuis/op/blob/main/configs/armv8-mini.config) | [![](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](https://github.com/yasuis/op/releases/tag/ARMv8_MINI) |
 | [![](https://img.shields.io/badge/OpenWrt-Rockchip_平台-32C955.svg?logo=op)](https://github.com/yasuis/op/blob/main/.github/workflows/Rockchip-OpenWrt.yml) | [![](https://github.com/yasuis/op/actions/workflows/Rockchip-OpenWrt.yml/badge.svg)](https://github.com/yasuis/op/actions/workflows/Rockchip-OpenWrt.yml) | [![](https://img.shields.io/badge/编译-配置-orange.svg?logo=apache-spark)](https://github.com/yasuis/op/blob/main/configs/rockchip.config) | [![](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](https://github.com/yasuis/Op/releases/tag/Rockchip) |
 | [![](https://img.shields.io/badge/OpenWrt-树莓派_4B-32C955.svg?logo=op)](https://github.com/yasuis/op/blob/main/.github/workflows/RaspberryPi4-OpenWrt.yml) | [![](https://github.com/yasuis/op/actions/workflows/RaspberryPi4-OpenWrt.yml/badge.svg)](https://github.com/yasuis/op/actions/workflows/RaspberryPi4-OpenWrt.yml) | [![](https://img.shields.io/badge/编译-配置-orange.svg?logo=apache-spark)](https://github.com/yasuis/op/blob/main/configs/rpi4.config) | [![](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](https://github.com/yasuis/op/releases/tag/RaspberryPi4) |
-
+| [![](https://img.shields.io/badge/OpenWrt-斐讯N1-32C955.svg?logo=op)](https://github.com/yasuis/op/blob/main/.github/workflows/N1-OpenWrt.yml) | [![](https://github.com/yasuis/op/actions/workflows/N1-OpenWrt.yml/badge.svg)](https://github.com/yasuis/op/actions/workflows/N1-OpenWrt.yml) | [![](https://img.shields.io/badge/编译-配置-orange.svg?logo=apache-spark)](https://github.com/yasuis/op/blob/main/configs/n1.config) | [![](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](https://github.com/yasuis/op/releases/tag/n1) |
 
 
 ## 特别提示 [![](https://img.shields.io/badge/-个人免责声明-FFFFFF.svg)](#特别提示-)
@@ -55,8 +54,8 @@
 | <img width="100" src="https://avatars.githubusercontent.com/u/53193414"/> | <img width="100" src="https://avatars.githubusercontent.com/u/31687149"/> | <img width="100" src="https://avatars.githubusercontent.com/u/25927179"/> | <img width="100" src="https://avatars.githubusercontent.com/u/39355261"/> |
 | [Ophub](https://github.com/ophub) | [SuLingGG](https://github.com/SuLingGG) | [QiuSimons](https://github.com/QiuSimons) | [IvanSolis1989](https://github.com/IvanSolis1989) |
 | <img width="100" src="https://avatars.githubusercontent.com/u/68696949"/> | <img width="100" src="https://avatars.githubusercontent.com/u/22287562"/> | <img width="100" src="https://avatars.githubusercontent.com/u/45143996"/> | <img width="100" src="https://avatars.githubusercontent.com/u/44228691"/> |
-| [haiibo](https://github.com/haiibo/OpenWrt) |
-| <img width="100" src="https://avatars.githubusercontent.com/u/85640068"/> |
+| [haiibo](https://github.com/haiibo/OpenWrt) |[sbwml](https://github.com/sbwml) |
+| <img width="100" src="https://avatars.githubusercontent.com/u/85640068"/> | <img width="100" src="https://avatars.githubusercontent.com/u/16485166?v=4"/> |
 
 <a href="#readme">
 <img src="https://img.shields.io/badge/-返回顶部-FFFFFF.svg" title="返回顶部" align="right"/>
